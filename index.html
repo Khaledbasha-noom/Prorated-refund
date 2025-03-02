@@ -1,1 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refund Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h2>Refund Calculator</h2>
+        <label for="planCharge">Plan Charge (C):</label>
+        <input type="number" id="planCharge" placeholder="Enter total plan charge">
 
+        <label for="planMonths">Plan Duration (M) in Months:</label>
+        <input type="number" id="planMonths" placeholder="Enter plan months">
+
+        <label for="daysPassed">Days Passed (D):</label>
+        <input type="number" id="daysPassed" placeholder="Enter days since last charge">
+
+        <button onclick="calculateRefund()">Calculate Refund</button>
+
+        <h3>Refund Amount: <span id="refundAmount">0</span></h3>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
