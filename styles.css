@@ -12,59 +12,109 @@ body {
 
 .container {
     text-align: center;
+    width: 90%;
+    max-width: 600px;
 }
 
+/* Heading styles */
 h1 {
     color: #00ffea;
     text-shadow: 0 0 10px #00ffea;
 }
 
-.calculator, .email-generator {
+/* Calculator Section */
+.calculator {
     background: #1a1a1a;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 25px;
+    border-radius: 12px;
     box-shadow: 0 0 15px rgba(0, 255, 234, 0.5);
-    width: 400px;
+    width: 100%; /* Make it wider */
+    max-width: 500px; /* Adjust the max width */
     margin-top: 20px;
 }
 
 label {
     display: block;
-    margin: 10px 0 5px;
+    margin: 10px auto 5px;
     color: #00ffea;
+    text-align: center;
 }
 
-input, textarea {
-    width: 100%;
+input {
+    width: 95%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #00ffea;
     border-radius: 5px;
     background: #262626;
     color: #ffffff;
+    text-align: center;
 }
 
+/* Button Styling */
 button {
     background-color: #00ffea;
     color: black;
     border: none;
-    padding: 10px;
+    padding: 12px;
     width: 100%;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
+    font-size: 16px;
 }
 
 button:hover {
     background-color: #00c4b4;
 }
 
+/* Refund Amount Display */
 h3 {
     margin-top: 15px;
     color: #00ffea;
 }
 
+/* Email Generator Section */
+.email-generator {
+    background: linear-gradient(135deg, #ff00ff, #8000ff);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.email-generator h2 {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
 textarea {
-    height: 100px;
+    width: 95%;
+    height: 120px;
     resize: none;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background: #262626;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.email-generator button {
+    background-color: #ff00ff;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.email-generator button:hover {
+    background-color: #c000c0;
 }
