@@ -1,97 +1,70 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #1a1a1a;
+    background-color: #0d0d0d;
+    color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    flex-direction: column;
 }
 
-
-.calculator {
-    background: #111;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 255, 170, 0.8);
+.container {
     text-align: center;
-    width: 400px;
 }
 
 h1 {
-    font-size: 28px;
-    margin-bottom: 15px;
-    color: #ff007f;
-    text-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f, 0 0 30px #ff007f;
-    font-weight: bold;
-    letter-spacing: 2px;
-    animation: glow 1.5s infinite alternate;
+    color: #00ffea;
+    text-shadow: 0 0 10px #00ffea;
 }
 
-@keyframes glow {
-    from {
-        text-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f, 0 0 30px #ff007f;
-    }
-    to {
-        text-shadow: 0 0 20px #ff1493, 0 0 30px #ff1493, 0 0 40px #ff1493;
-    }
-}
-
-h2 {
-    margin-bottom: 15px;
-    color: #0ff;
-    text-shadow: 0 0 10px #0ff;
+.calculator, .email-generator {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 234, 0.5);
+    width: 400px;
+    margin-top: 20px;
 }
 
 label {
     display: block;
-    color: #fff;
-    font-size: 16px;
-    text-align: center;
     margin: 10px 0 5px;
-    text-shadow: 0 0 5px #fff;
+    color: #00ffea;
 }
 
-input {
-    width: calc(100% - 20px);
+input, textarea {
+    width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 2px solid #0ff;
+    border: 1px solid #00ffea;
     border-radius: 5px;
-    background-color: #222;
-    color: #0ff;
-    text-align: center;
-    font-size: 16px;
-    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
-    outline: none;
-}
-
-input:focus {
-    border-color: #ff007f;
-    box-shadow: 0 0 15px #ff007f;
+    background: #262626;
+    color: #ffffff;
 }
 
 button {
-    background-color: #ff007f;
-    color: white;
+    background-color: #00ffea;
+    color: black;
     border: none;
-    padding: 12px;
+    padding: 10px;
     width: 100%;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
-    text-shadow: 0 0 5px white;
-    box-shadow: 0 0 10px rgba(255, 0, 127, 0.8);
-    transition: 0.3s;
+    font-weight: bold;
 }
 
 button:hover {
-    background-color: #0ff;
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+    background-color: #00c4b4;
 }
 
 h3 {
     margin-top: 15px;
-    color: #0ff;
-    text-shadow: 0 0 10px #0ff;
+    color: #00ffea;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
 }
