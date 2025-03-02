@@ -3,25 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Refund Calculator</title>
+    <title>Noom Agent Desk</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div class="calculator">
-        <h1>Noom Agent desk</h1>
-        <h2>Refund Calculator</h2>
-        <label for="planCharge">Plan Charge (C):</label>
-        <input type="number" id="planCharge" placeholder="Enter total plan charge">
+    <div class="container">
+        <h1>Noom Agent Desk</h1>
 
-        <label for="planMonths">Plan Duration (M) in Months:</label>
-        <input type="number" id="planMonths" placeholder="Enter plan months">
+        <div class="calculator">
+            <h2>Refund Calculator</h2>
+            <label for="planCharge">Plan Charge ($):</label>
+            <input type="number" id="planCharge">
 
-        <label for="daysPassed">Days Passed (D):</label>
-        <input type="number" id="daysPassed" placeholder="Enter days since last charge">
+            <label for="planMonths">Plan Duration (Months):</label>
+            <input type="number" id="planMonths">
 
-        <button onclick="calculateRefund()">Calculate Refund</button>
+            <label for="passedDays">Days Since Last Charge:</label>
+            <input type="number" id="passedDays">
 
-        <h3>Refund Amount: <span id="refundAmount">0</span></h3>
+            <button onclick="calculateRefund()">Calculate Refund</button>
+
+            <h3 id="refundAmount"></h3>
+        </div>
+
+        <div class="email-generator">
+            <h2>Refund Email</h2>
+            <button onclick="generateEmail()">Generate Email</button>
+            <textarea id="emailOutput" readonly></textarea>
+        </div>
     </div>
 
     <script src="script.js"></script>
