@@ -13,6 +13,7 @@ body {
 /* Container to hold both sections */
 .container {
     text-align: center;
+   justify-content: center;
     width: 90%;
     max-width: 700px;
 }
