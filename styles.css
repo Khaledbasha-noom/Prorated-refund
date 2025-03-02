@@ -14,7 +14,7 @@ body {
 .container {
     text-align: center;
     width: 90%;
-    max-width: 600px;
+    max-width: 700px;
 }
 
 /* Heading styles */
@@ -33,11 +33,12 @@ h1 {
     max-width: 500px;
     margin-top: 20px;
     text-align: center; /* Center everything inside */
+    justify-content: center;
 }
 
 /* Fix alignment of label & input */
 .calculator label {
-    display: block;
+    justify-content: center;
     text-align: center;
     font-size: 16px;
     color: #00ffea;
@@ -53,7 +54,6 @@ h1 {
     background: #262626;
     color: #ffffff;
     text-align: center; /* Ensures text inside input is centered */
-    display: block;
     margin-left: auto;
     margin-right: auto;
 }
@@ -90,6 +90,7 @@ h3 {
     width: 100%;
     max-width: 500px;
     margin-top: 20px;
+    justify-content: center;
     text-align: center;
 }
 
