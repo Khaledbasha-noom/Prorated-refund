@@ -14,7 +14,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 300px;
+    width: 400px;
 }
 
 h2 {
@@ -28,7 +28,7 @@ label {
 
 input {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
