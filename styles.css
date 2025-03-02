@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #1a1a1a;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,52 +9,88 @@ body {
 }
 
 .calculator {
-    background: white;
+    background: #111;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 255, 170, 0.8);
     text-align: center;
-    justify-content: center;
     width: 400px;
 }
+
 h1 {
+    font-size: 28px;
     margin-bottom: 15px;
-    Color:red;
-    
+    color: #ff007f;
+    text-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f, 0 0 30px #ff007f;
+    font-weight: bold;
+    letter-spacing: 2px;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f, 0 0 30px #ff007f;
+    }
+    to {
+        text-shadow: 0 0 20px #ff1493, 0 0 30px #ff1493, 0 0 40px #ff1493;
+    }
 }
 
 h2 {
     margin-bottom: 15px;
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff;
 }
 
 label {
-    justify-content: center;
-    align-items: center;
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
     margin: 10px 0 5px;
+    text-shadow: 0 0 5px #fff;
 }
 
 input {
-    width: 100%;
+    width: calc(100% - 20px);
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 2px solid #0ff;
     border-radius: 5px;
+    background-color: #222;
+    color: #0ff;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    outline: none;
+}
+
+input:focus {
+    border-color: #ff007f;
+    box-shadow: 0 0 15px #ff007f;
 }
 
 button {
-    background-color: #28a745;
+    background-color: #ff007f;
     color: white;
     border: none;
-    padding: 10px;
+    padding: 12px;
     width: 100%;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+    text-shadow: 0 0 5px white;
+    box-shadow: 0 0 10px rgba(255, 0, 127, 0.8);
+    transition: 0.3s;
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #0ff;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
 }
 
 h3 {
     margin-top: 15px;
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff;
 }
