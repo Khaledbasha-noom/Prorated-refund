@@ -17,13 +17,19 @@ body {
     justify-content: center;
     width: 400px;
 }
+h1 {
+    margin-bottom: 15px;
+    Color:red;
+    
+}
 
 h2 {
     margin-bottom: 15px;
 }
 
 label {
-    display: block;
+    justify-content: center;
+    align-items: center;
     margin: 10px 0 5px;
 }
 
